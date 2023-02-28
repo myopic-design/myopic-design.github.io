@@ -1,0 +1,46 @@
+baseURL = "https://myopic.design/"
+languageCode = "en-us"
+title = "Myopic Design"
+
+enableGitInfo = true
+enableRobotsTXT = true
+ignoreFiles = ["README.md", "LICENSE"]
+sectionPagesMenu = "main"
+
+[params]
+description = "High-quality themes for VS Code, Vim, Emacs, and others"
+
+[build]
+writeStats = true
+
+[imaging]
+hint = 'icon'
+quality = 75
+
+[markup.highlight]
+noClasses = false
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest", "json"]
+
+[outputFormats.manifest]
+mediaType = "application/manifest+json"
+baseName = "manifest"
+isPlainText = true
+rel = "manifest"
+
+[outputFormats.rss]
+baseName = "rss"
+
+[outputs]
+home = ["html", "manifest", "rss"]
+page = ["html"]
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
+
+[taxonomies]
+tag = "tags"
